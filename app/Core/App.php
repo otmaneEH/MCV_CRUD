@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    gc_disable
-</body>
-</html>
+<?php
+
+class App
+{
+    protected $controller = "HomeController";
+    protected $action = "index.php";
+    protected $param = [];
+    public function __construct()
+    {
+        $url= $_SERVER['REQUEST_URI'];
+        $url= explode("/",$url);
+    }
+}
